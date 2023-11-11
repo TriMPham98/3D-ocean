@@ -70,7 +70,7 @@ async function init() {
   skyUniforms["mieDirectionalG"].value = 0.8;
 
   const parameters = {
-    elevation: 2,
+    elevation: 0.4,
     azimuth: 180,
   };
 

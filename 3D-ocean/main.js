@@ -49,19 +49,19 @@ function random(min, max) {
 // const boat = new Boat()
 
 
-class Trash{
-  constructor(_scene){
-    scene.add( _scene )
-    _scene.scale.set(1.5, 1.5, 1.5)
-    if(Math.random() > .6){
-      _scene.position.set(random(-100, 100), -.5, random(-100, 100))
-    }else{
-      _scene.position.set(random(-500, 500), -.5, random(-1000, 1000))
-    }
+// class Trash{
+//   constructor(_scene){
+//     scene.add( _scene )
+//     _scene.scale.set(1.5, 1.5, 1.5)
+//     if(Math.random() > .6){
+//       _scene.position.set(random(-100, 100), -.5, random(-100, 100))
+//     }else{
+//       _scene.position.set(random(-500, 500), -.5, random(-1000, 1000))
+//     }
 
-    this.trash = _scene
-  }
-}
+//     this.trash = _scene
+//   }
+// }
 
 async function loadModel(url){
   return new Promise((resolve, reject) => {
@@ -79,8 +79,8 @@ async function loadModel(url){
 //   return new Trash(boatModel.clone())
 // }
 
-let trashes = []
-const TRASH_COUNT = 500
+// let trashes = []
+// const TRASH_COUNT = 500
 
 init();
 animate();

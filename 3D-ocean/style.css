@@ -24,7 +24,7 @@
   padding: 10px 20px;
   font-size: 69px;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 5px;
   font-family: "Montserrat", sans-serif;
   transition: background-color 0.3s ease;
 }

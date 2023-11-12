@@ -18,17 +18,17 @@
 #loading-screen #start-button {
   background-color: black;
   color: white;
-  border: none;
+  border: 2px solid #333;
   padding: 10px 20px;
   font-size: 69px;
   cursor: pointer;
-  border-radius: 8px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
-  font-family: 'Montserrat', sans-serif; /* Add Montserrat here */
+  border-radius: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-family: "Montserrat", sans-serif;
 }
 
 #loading-screen #start-button:hover {
-  background-color: #333; /* Slightly lighter black for hover effect */
+  background-color: #333;
 }
 
 .hidden {

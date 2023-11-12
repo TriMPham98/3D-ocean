@@ -15,6 +15,21 @@
   z-index: 1000;
 }
 
+#loading-screen #start-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 36px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#loading-screen #start-button:hover {
+  background-color: #333; /* Slightly lighter black for hover effect */
+}
+
 .hidden {
   opacity: 0;
   pointer-events: none;

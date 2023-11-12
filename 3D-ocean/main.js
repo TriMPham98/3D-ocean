@@ -109,6 +109,8 @@ async function init() {
 
   const waterUniforms = water.material.uniforms;
 
+  waterUniforms.size.value = 10;
+
   const folderWater = gui.addFolder("Water");
   folderWater
     .add(waterUniforms.distortionScale, "value", 0, 8, 0.1)

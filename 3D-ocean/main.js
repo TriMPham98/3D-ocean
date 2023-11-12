@@ -17,10 +17,13 @@ init();
 const startButton = document.getElementById("start-button");
 const loadingScreen = document.getElementById("loading-screen");
 const canvas = renderer.domElement;
+const backgroundMusic = document.getElementById("background-music"); // Get the audio element
 
 // Initially hide the canvas
 canvas.style.opacity = 0;
 canvas.style.transition = "opacity 2s ease";
+
+backgroundMusic.volume = 0.069;
 
 startButton.addEventListener("click", function () {
   // Start fading out the loading screen and fading in the scene
@@ -29,6 +32,9 @@ startButton.addEventListener("click", function () {
 
   // Start the animation loop
   animate();
+
+  // Play the background music
+  backgroundMusic.play();
 });
 
 async function init() {

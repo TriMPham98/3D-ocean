@@ -89,7 +89,7 @@ async function init() {
 
   const parameters = {
     elevation: 0.4,
-    azimuth: 155,
+    azimuth: -164,
   };
 
   const pmremGenerator = new THREE.PMREMGenerator(renderer);

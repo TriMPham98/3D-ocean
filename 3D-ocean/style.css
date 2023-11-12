@@ -39,62 +39,55 @@
 
 /* Use the button's ::before and ::after for top and bottom borders */
 #loading-screen #start-button::before,
-#loading-screen #start-button::after {
-  content: "";
-  position: absolute;
-  background-color: white;
-  transition: transform 0.5s ease;
-}
-
-#loading-screen #start-button::before {
-  height: 2px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-#loading-screen #start-button::after {
-  height: 2px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: right;
-}
-
-/* Use the span's ::before and ::after for left and right borders */
+#loading-screen #start-button::after,
 #loading-screen #start-button span::before,
 #loading-screen #start-button span::after {
   content: "";
   position: absolute;
-  background-color: white;
+  /* Initial gradient background */
+  background-image: linear-gradient(to right, #e3b3a7, #1c9bf0); /* Example gradient */
   transition: transform 0.5s ease;
 }
 
-#loading-screen #start-button span::before {
-  width: 2px;
-  height: 100%;
-  top: 0;
+/* Define top and bottom border lengths and positions */
+#loading-screen #start-button::before,
+#loading-screen #start-button::after {
   left: 0;
+  right: 0;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+#loading-screen #start-button::before {
+  top: 0;
+}
+
+#loading-screen #start-button::after {
+  bottom: 0;
+  transform-origin: right; /* Origin from right for bottom border */
+}
+
+/* Define left and right border lengths and positions */
+#loading-screen #start-button span::before,
+#loading-screen #start-button span::after {
+  top: 0;
+  bottom: 0;
+  width: 3px;
   transform: scaleY(0);
-  transform-origin: top;
+}
+
+#loading-screen #start-button span::before {
+  left: 0;
 }
 
 #loading-screen #start-button span::after {
-  width: 2px;
-  height: 100%;
-  top: 0;
   right: 0;
-  transform: scaleY(0);
-  transform-origin: bottom;
+  transform-origin: bottom; /* Origin from bottom for right border */
 }
 
-#loading-screen #start-button:hover::before {
-  transform: scaleX(1);
-}
-
+/* Hover effects */
+#loading-screen #start-button:hover::before,
 #loading-screen #start-button:hover::after {
   transform: scaleX(1);
 }

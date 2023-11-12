@@ -96,6 +96,8 @@ async function init() {
   controls.target.set(0, 10, 0);
   controls.minDistance = 40.0;
   controls.maxDistance = 200.0;
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.05;
   controls.update();
 
   // GUI
@@ -137,6 +139,7 @@ function isColliding(obj1, obj2) {
 
 function animate() {
   requestAnimationFrame(animate);
+  controls.update();
   render();
 }
 

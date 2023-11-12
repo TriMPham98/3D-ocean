@@ -23,7 +23,7 @@ const backgroundMusic = document.getElementById("background-music"); // Get the 
 canvas.style.opacity = 0;
 canvas.style.transition = "opacity 2s ease";
 
-backgroundMusic.volume = 0.05;
+backgroundMusic.volume = 0.69;
 
 startButton.addEventListener("click", function () {
   // Start fading out the loading screen and fading in the scene

@@ -130,13 +130,6 @@ function onWindowResize() {
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
-function isColliding(obj1, obj2) {
-  return (
-    Math.abs(obj1.position.x - obj2.position.x) < 15 &&
-    Math.abs(obj1.position.z - obj2.position.z) < 15
-  );
-}
-
 function animate() {
   requestAnimationFrame(animate);
   controls.update();

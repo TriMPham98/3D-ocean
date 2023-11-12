@@ -20,10 +20,11 @@
   color: white;
   border: none;
   padding: 10px 20px;
-  font-size: 36px;
+  font-size: 69px;
   cursor: pointer;
   border-radius: 8px; /* Rounded corners */
   transition: background-color 0.3s ease; /* Smooth transition for background color */
+  font-family: 'Montserrat', sans-serif; /* Add Montserrat here */
 }
 
 #loading-screen #start-button:hover {

@@ -12,7 +12,24 @@ let camera, scene, renderer;
 let controls, water, sun;
 
 init();
-animate();
+
+// Start Button and Loading Screen
+const startButton = document.getElementById("start-button");
+const loadingScreen = document.getElementById("loading-screen");
+const canvas = renderer.domElement;
+
+// Initially hide the canvas
+canvas.style.opacity = 0;
+canvas.style.transition = "opacity 2s ease";
+
+startButton.addEventListener("click", function () {
+  // Start fading out the loading screen and fading in the scene
+  loadingScreen.classList.add("hidden");
+  canvas.style.opacity = 1;
+
+  // Start the animation loop
+  animate();
+});
 
 async function init() {
   renderer = new THREE.WebGLRenderer();

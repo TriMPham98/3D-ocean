@@ -2,3 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+#loading-screen {
+  transition: opacity 2s ease;
+  z-index: 1000;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
